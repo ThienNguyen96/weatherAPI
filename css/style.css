@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container {
+    width: 100%;
+    /* height: 500px; */
+    background: linear-gradient(146deg,#f22cffbf 26%,#131c5ded);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    padding: 50px 22% 100px 22%;
+}
+section {
+    width: 50%;
+    height: 400px;
+    background: aquamarine;
+    margin: auto;
+}
+section.left {
+    background: #ffffff;
+    grid-column: 1/3;
+    height: 325px;
+    border-top-left-radius: 32%;
+    border: 1px solid #f3ecec;
+    position: relative;
+}
+section.left h1 {
+    clear: both;
+    text-align: center;
+    font-family: segoe ui light;
+    font-size: 28px;
+}
+section.right {
+    background: aquamarine;
+    grid-column: 1/3;
+    border: 2px solid #fff;
+    border-bottom-right-radius: 47%;
+    position: relative;
+    box-shadow: 5px 0px 15px 0px #bbb0b0;
+    background: url(../img/Beautiful-Weather2.jpg);
+     background-size: cover;
+}
+.logo {
+    width: 71%;
+    height: 42px;
+    margin: 0px;
+    float: right;
+    box-sizing: inherit;
+    padding: 10px 0px;
+}
+p.title--input {
+    font-family: segoe ui light;
+    text-align: left;
+    margin: 4px 0 9px 32px;
+    font-size: 21px;
+}
+input {
+    margin-left: 30px;
+    padding: 6px 31px;
+    font-family: segoe ui light;
+    font-size: 16px;
+    width: 71%;
+    border: none;
+    border-bottom: 1px solid #c1bebe;
+    position: relative;
+}
+input:focus {
+    border-color: transparent;
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+    outline: none;
+}
+
+button#btnSearch {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    padding: 7px 30px;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    border: 1px solid #bba5a5;
+    color: #000;
+    font-family: segoe ui light;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 1px 1px 5px 0px #d0d0d0;
+    cursor: pointer;
+}
+section.right img {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 47%;
+}
+
+section.right:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(106deg,#000000ba,#ffffff94);
+    border-bottom-right-radius: 47%;
+    top: 0;
+    left: 0;
+}
+
+div#result {
+    width: 87%;
+    color: #fff;
+    z-index: 4;
+    position: absolute;
+    font-family: segoe ui light;
+    font-size: 24px;
+    left: 10%;
+    top: 12%;
+}
+
+button#btnSearch:hover {
+    background: #2ae0c0;
+    border: 1px solid #2ae0c0;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1300px) {
+	.container {
+	    width: 100%;
+	    /* height: 500px; */
+	    background: linear-gradient(146deg,#f22cffbf 26%,#131c5ded);
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    box-sizing: border-box;
+	    padding: 50px 16% 93px 10%;
+	}
+}
+
+@media (max-width: 1000px){
+	.container {
+	    width: 100%;
+	    /* height: 500px; */
+	    background: linear-gradient(146deg,#f22cffbf 26%,#131c5ded);
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    box-sizing: border-box;
+	    padding: 51px 2% 91px 0%;
+	}
+}
+@media (max-width: 700px){
+	.container {
+	    width: 100%;
+	    /* height: 500px; */
+	    background: linear-gradient(146deg,#f22cffbf 26%,#131c5ded);
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    box-sizing: border-box;
+	    padding: 30px 0% 31px 0%;
+	}
+	input {
+	    margin-left: 9%;
+	    padding: 6px 33px;
+	    font-family: segoe ui light;
+	    font-size: 16px;
+	    width: 63%;
+	    border: none;
+	    border-bottom: 1px solid #c1bebe;
+	    position: relative;
+	}
+	section {
+	    width: 88%;
+	    height: 400px;
+	    background: aquamarine;
+	    margin: auto;
+	}
+}
+
+@media (max-width: 400px){
+	input {
+	    margin-left: 35px;
+	    padding: 6px 19px;
+	    font-family: segoe ui light;
+	    font-size: 16px;
+	    width: 68%;
+	    border: none;
+	    border-bottom: 1px solid #c1bebe;
+	    position: relative;
+	}
+	section {
+	    width: 88%;
+	    height: 400px;
+	    background: aquamarine;
+	    margin: auto;
+	}
+}
+
